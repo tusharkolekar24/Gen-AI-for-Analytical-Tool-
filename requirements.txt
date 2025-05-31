@@ -1,0 +1,6 @@
+Flask==3.1.0
+langchain
+langchain-openai
+langchain-experimental
+pandas
+tabulate

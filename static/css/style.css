@@ -1,0 +1,931 @@
+/* static/style.css */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+/*-------------------------------------------------------------Sidebar ----------------------------------------------------*/
+.sidenav {
+    /* flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    position: relative;
+    overflow: auto; /* Ensure content can scroll if necessary */
+
+    width: 250px;
+    height: 100%;
+    background-color: #f4f4f4;
+    border-right: 1px solid #f4f4f4;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: auto;
+}
+
+
+.sidenav h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: rgb(99, 99, 233);
+    text-align: center;
+}
+
+.sidenav a {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: left;
+    background-color: rgb(171, 171, 238);
+    border: 1px solid transparent;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 18px;
+    text-decoration: none;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.sidenav a:hover {
+    background-color: #fff;
+    color: rgb(171, 171, 238);
+    border-color: rgb(171, 171, 238);
+}
+
+.sidenav a i {
+    /* margin-left: 10px; */
+    margin-right: 10px;
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+/* Style for the icon inside the h1 */
+.sidenav h1 i {
+    margin-right: 10px; /* Space between icon and text */
+    font-size: 32px; /* Size of the icon */
+}
+
+.sidenav.toggled {
+    width: 60px; /* Width when toggled */
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    /* margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px; */
+    position: relative;
+    overflow-y: auto;
+    background-color: rgb(233, 237, 247);
+     /* Optional background color background-color: rgb(233, 237, 247); #ede7e7;*/
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.search-bar button {
+    padding: 10px;
+    border: none;
+    background-color: rgb(171, 171, 238);
+    color: #fff;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.search-bar button:hover {
+    background-color: #fff;
+    color: rgb(171, 171, 238);
+    border: 1px solid rgb(171, 171, 238);
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+}
+
+.user-profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-profile div {
+    font-size: 16px;
+}
+
+/* Add to static/style.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    /* background-color: #fff; */
+    background-color: rgb(233, 237, 247);
+    border-radius: 8px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    margin-left: 18px; /* Apply 15px margin to left and right */
+    margin-right: 10px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.navbar .toggle-btn {
+    position: absolute;
+    top: 20px;
+    z-index: 1100; /* Ensure the button is above other elements */
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    flex: 0.65;
+}
+
+.navbar-left input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+    /*width: 400px; */
+    flex: 1;
+    /* margin-left: 40px; */
+
+}
+
+.navbar-left button {
+    padding: 8px 12px;
+    border: none;
+    background-color: rgb(171, 171, 238);
+    color: #fff;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 150px; 
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.navbar-left button:hover {
+    background-color: #fff;
+    color: rgb(171, 171, 238);
+    border: 1px solid rgb(171, 171, 238);
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-right a {
+    margin-left: 15px;
+    color: rgb(171, 171, 238);
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.navbar-right h1{
+    font-size: 18px; 
+    color: rgb(99, 99, 233);
+    margin: 0;
+}
+
+.navbar-right a:hover {
+    color: #000;
+}
+
+.navbar-right .user-profile img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+/* Navbar Main Styling */
+.navbar-content-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    padding: 5px; /* Add padding around the content */
+    margin-bottom: 20px; /* Space below the navbar main */
+}
+
+.navbar-content-container h1{
+    text-align: center;
+    font-size: 30px; 
+    color: rgb(99, 99, 233);
+    margin-top: -25px;
+}
+
+/*---------------------------------------------------------------BOT-------------------------------------------------------------*/
+.main-container{
+    width: 92%;
+    margin: 25px auto;
+    /* background: white; */
+    padding: 15px;
+    border-radius: 10px;
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
+    /* min-height: 25vh; */
+}
+
+.upload-box {
+  margin-top: -15px;
+  background-color: rgb(180, 180, 240);  /* Light gray background */
+  border: 2px dashed #ffffff80;
+  border-radius: 10px;
+  padding: 0 15px;             /* Horizontal padding only */
+  width: 100%;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+
+  height: 75px;               /* Set fixed height */
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+
+.upload-icon {
+  width: 40px;                /* Smaller icon to fit height */
+  height: 40px;               /* Ensure height doesn't exceed box */
+}
+
+.upload-btn {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  padding: 10px 16px;          /* Smaller padding to fit height */
+  font-size: 14px;
+  border-radius: 5px;
+  display: inline-block;
+  cursor: pointer;
+  margin: 0;
+  white-space: nowrap;
+}
+
+
+
+.meta-info {
+    width: 100%;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap; /* Allows cards to wrap to the next line if needed */
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+    gap: 20px;
+    margin-bottom: -50px;
+}
+
+.rag-content-info {
+    flex:0.6;
+    margin: 0px auto;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    min-height: 37vh; 
+    margin-bottom: 40px;
+
+}
+
+.rag-content-info h1 { 
+    text-align: left;
+    font-size: 16px;
+    padding: 10px;
+    margin-left: 16px;
+    margin-top: 5px;
+    
+}
+
+.rag-content-info textarea {
+    width: 95%;
+    min-height: 28vh;
+    border-radius: 8px;
+    font-size: 16px;
+    resize: vertical;
+    box-sizing: border-box;
+    outline: none;
+    display: block;       /* Make it a block element */
+    margin: 0 auto;       /* Horizontally center */
+    transition: border-color 0.3s ease;
+    background-color: rgb(204, 204, 242);  /* Light gray background */
+    color: rgb(29, 29, 194);
+}
+
+.rag-content-info textarea:focus {
+    border-color:  rgb(197, 205, 222); /* Optional background color #e0e0e0*/;
+    box-shadow: 0 0 5px rgb(197, 205, 222);
+}
+
+
+.mcq-info {
+    flex:0.4;
+    /* margin: 0px auto; */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    min-height: 37vh; 
+
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Horizontally center items */
+    margin-bottom: 40px;
+}
+
+.mcq-info h1 { 
+    text-align: left;
+    font-size: 16px;
+    padding: 10px;
+    margin-left: 16px;
+    margin-top: 5px;
+}
+
+.mcq-info textarea {
+    width: 90%;
+    min-height: 22vh;
+    border-radius: 8px;
+    font-size: 16px;
+    resize: vertical;
+    box-sizing: border-box;
+    outline: none;
+    display: block;       /* Make it a block element */
+    margin: 0 auto;       /* Horizontally center */
+    transition: border-color 0.3s ease;
+    background-color: rgb(204, 204, 242);  /* Light gray background */
+    color: rgb(29, 29, 194);
+    margin-bottom: 15px;
+
+}
+
+.mcq-info textarea:focus {
+    border-color:  rgb(197, 205, 222); /* Optional background color #e0e0e0*/;
+    box-shadow: 0 0 5px rgb(197, 205, 222);
+}
+
+.text-info {
+
+    width: 100%;
+    margin: 0px auto;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    min-height: 24vh;
+    margin-top: 25px;
+    margin-bottom: -35px;
+}
+
+.text-info h1{
+    text-align: left;
+    font-size: 16px;
+    padding: 10px;
+    margin-left: 16px;
+
+}
+
+.text-info textarea {
+    width: 95%;
+    height: 80px;
+    border-radius: 8px;
+    font-size: 16px;
+    resize: vertical;
+    box-sizing: border-box;
+    outline: none;
+    display: block;       /* Make it a block element */
+    margin: 0 auto;       /* Horizontally center */
+    transition: border-color 0.3s ease;
+    background-color: rgb(204, 204, 242);  /* Light gray background */
+    color: rgb(29, 29, 194);
+}
+
+.text-info textarea:focus {
+    border-color:  rgb(197, 205, 222); /* Optional background color #e0e0e0*/;
+    box-shadow: 0 0 5px rgb(197, 205, 222);
+}
+
+.text-info button {
+    background: rgb(171, 171, 238);
+    color: #fff;
+    border: none;
+    padding: 8px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: fit-content;
+    width: 15%;
+    margin-left: 25px;
+    margin-top: 10px;
+}
+
+.text-info button:hover {
+    background-color: rgb(143, 143, 200);
+    color:  rgb(251, 251, 251);
+    border-color: rgb(178, 178, 237);
+}
+
+.mcq-info a.btn {
+    padding: 10px;
+    margin-left: 16px;
+    font-size: 14px;
+    background: rgb(171, 171, 238);
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.mcq-info a.btn:hover {
+    background-color: rgb(143, 143, 200);
+    color:  rgb(251, 251, 251);
+    border-color: rgb(178, 178, 237);
+}
+/*---------------------------------------------------------------Dropdown button-------------------------------------------------------------*/
+/* Dropdown Button */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.dropdown-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between text and arrow */
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(171, 171, 238);
+    color: #fff;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    font-size: 18px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-sizing: border-box;
+}
+
+.dropdown-button i {
+    margin-right: 8px; /* Space between icon and text */
+}
+
+.dropdown-button .text {
+    flex: 1; /* Takes up available space */
+    text-align: left; /* Ensure text aligns left */
+}
+
+.dropdown-button:hover {
+    background-color: #fff;
+    color: rgb(171, 171, 238);
+    border-color: rgb(171, 171, 238);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid rgb(171, 171, 238);
+    border-radius: 5px;
+    z-index: 1;
+    top: 100%;
+    left: 0;
+    right: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 5px;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown-content.show {
+    display: block;
+}
+/*---------------------------------------------------------------Tool Form Info-------------------------------------------------------------*/
+/* Form Container */
+.form-container {
+    display: none; /* Initially hidden */
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid rgb(171, 171, 238);
+    border-radius: 5px;
+    z-index: 1;
+    top: 100%; /* Position below the dropdown button */
+    left: 0;
+    right: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 500px;
+    width: 100%;
+    max-height: 80vh; /* Ensure the form does not exceed viewport height */
+    overflow-y: auto; /* Add scroll if content overflows */
+}
+
+.form-container h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: rgb(171, 171, 238);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label{
+    display: block;
+    font-size: 16px;
+    color: #555;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: rgb(171, 171, 238);
+}
+
+input[type="text"],
+textarea {
+    width: 100%; /* Full width of the parent container */
+    padding: 10px; /* Space inside the dropdown */
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 12px; /* Updated font size */
+    background-color: #fff; /* Background color of the dropdown */
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    border-color: #007bff; /* Border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Show dropdown content when button is clicked */
+.dropdown-button.active + .form-container {
+    display: block;
+}
+
+/* Style for the select dropdown */
+.form-group select {
+    width: 100%; /* Full width of the parent container */
+    padding: 10px; /* Space inside the dropdown */
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 12px; /* Font size inside the dropdown */
+    background-color: #fff; /* Background color of the dropdown */
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+}
+
+/* Focus state for the select dropdown */
+.form-group select:focus {
+    border-color: #007bff; /* Border color on focus */
+    outline: none; /* Remove default focus outline */
+}
+
+/* Optional: Styling for dropdown options */
+.form-group option {
+    padding: 8px; /* Space inside each option */
+}
+
+/*---------------------------------------------------------------Header Info-------------------------------------------------------------*/
+/* Your updated CSS */
+.cards-container {
+    margin-top: 5px; /* Space above the container */
+    margin-bottom: 20px; /* Space below the container */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Space between the cards */
+    justify-content: space-around; /* Align cards with space around them */
+    margin-left: 9px;
+}
+
+.card {
+    background:#f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px; /* Increased padding to make space for the icon */
+    width: 23.2%; /* Adjust width as needed */
+    text-align: left; /* Align text to the left */
+    position: relative; /* Required for positioning the icon */
+    transition: background 0.3s, transform 0.3s;
+}
+
+.card h3 {
+    margin: 5px 0;
+    font-size: 1.0vw; /* Make heading font size smaller */
+    text-align: left; /* Align heading to the left */
+    color: #6cb0f9;
+    transition: background-color 0.3s, border-color 0.3s;
+    font: inherit;
+}
+
+.card p {
+    font-size: 1.6vw; /* Make the paragraph text size larger */
+    color: #333;
+    margin: 0; /* Remove default margin to align closer */
+    text-align: left; /* Align text to the left */
+    margin-bottom: 5px;
+}
+
+.card-icon {
+    font-size: 1.9vw; /* Adjust icon size as needed */
+    color: #c8d4da; /* Color of the icon */
+    position: absolute; /* Positioning the icon absolutely */
+    right: 25px; /* Distance from the right edge */
+    top: 50%; /* Vertically center the icon relative to the card */
+    transform: translateY(-50%); /* Correct vertical alignment */
+}
+
+.card:hover {
+    background:  #f6f1f1;
+    transform: translateY(-5px);
+}
+
+.cards-container-plotly {
+    display: flex; /* Enable Flexbox layout */
+    gap: 20px; /* Space between the two columns */
+    margin-top: 20px; /* Space above the container */
+    display: flex;
+    margin-left: 15px;
+    margin-right: 12px;
+}
+
+.card-plots, .card-pie-chart {
+    background: #f6f1f1;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 8px;
+    flex: 1; /* Allow the columns to grow and fill the available space */
+    text-align: left;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.card-plots h3, .card-pie-chart h3 {
+    margin: 5px 0;
+    font-size: 1.2rem;
+    color: #6cb0f9;
+}
+
+.sidebar-divider {
+    border-top: 2px solid #dee2e6;
+    margin: 5px 0; /* Spacing around the divider */
+}
+
+/*---------------------------------------------------------------Home page card1-------------------------------------------------------------*/
+/* second row details */
+.cards-container-row2 {
+    display: flex;
+    flex-wrap: wrap; /* Allows cards to wrap to the next line if needed */
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+    margin-right: 6px; /* Space inside the container */
+    margin-left: 15px; /* Space inside the container */
+    margin-top: 15px;
+}
+
+/* Individual card styling */
+.card-line-chart {
+    /* background: #f6f1f1; */
+    background: #f8f8f8;
+    border: 1px solid #ddd; /* Light border around the card */
+    border-radius: 8px; /* Rounded corners */
+    padding: 9px; /* Space inside the card */
+    width: 100%; /* Full width of the card container */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.card-line-chart h3 {
+    /* margin: 5px 0;
+    font-size: 1.0rem;
+    color:rgb(163, 174, 208);
+    font-weight: normal;
+    font-family: "DM Sans", sans-serif;
+    font: inherit; */
+
+    margin: 5px 0;
+    font-size: 1.0vw; /* Make heading font size smaller */
+    text-align: left; /* Align heading to the left */
+    color: #6cb0f9;
+    transition: background-color 0.3s, border-color 0.3s;
+    font: inherit;
+}
+
+/* Container for the Plotly chart */
+.line-chart-cards {
+    width: 100%; /* Full width of the card */
+    height: 250px; /* Fixed height for the chart */
+    background-color: #f9f9f9; /* Light gray background to distinguish the chart area */
+    border-radius: 4px; /* Slightly rounded corners */
+}
+/*---------------------------------------------------------------Home page card2-------------------------------------------------------------*/
+
+.cards-container-row3 {
+    display: flex;
+    flex-wrap: wrap; /* Allows cards to wrap to the next line if needed */
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+    margin-right: 6px; /* Space inside the container */
+    margin-left: 15px; /* Space inside the container */
+    margin-top: 15px;
+}
+
+.card-plots-row3 {
+    background: #f6f1f1;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 8px;
+    flex: 1; /* Allow the columns to grow and fill the available space */
+    text-align: left;
+    transition: background 0.3s, transform 0.3s;
+}
+
+/* Container for the Plotly chart */
+.bar-chart-cards {
+    width: 100%; /* Full width of the card */
+    height: 250px; /* Fixed height for the chart */
+    background-color: #f9f9f9; /* Light gray background to distinguish the chart area */
+    border-radius: 4px; /* Slightly rounded corners */
+}
+
+/*--------------------------------------------------------- Sectoral Page  ---------------------------------------------------*/
+/* second row details */
+.cards-container-sectoral-row1 {
+    display: flex;
+    flex-wrap: wrap; /* Allows cards to wrap to the next line if needed */
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+    margin-right: 6px; /* Space inside the container */
+    margin-left: 15px; /* Space inside the container */
+    margin-top: 5px;
+}
+
+
+.card-bar-sectoral-chart {
+    /* background: #f6f1f1; */
+    background: #f8f8f8;
+    border: 1px solid #ddd; /* Light border around the card */
+    border-radius: 8px; /* Rounded corners */
+    padding: 9px; /* Space inside the card */
+    /* width: 30%;  */
+    /* Full width of the card container */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    flex: 0.3;
+    margin-right: 15px; /* Space inside the container */
+}
+
+.bar-sectoral-chart{
+    /* width: 30%;  */
+    /* Full width of the card */
+    height: 600px; /* Fixed height for the chart */
+    background-color: #f9f9f9; /* Light gray background to distinguish the chart area */
+    border-radius: 4px; /* Slightly rounded corners */
+}
+
+
+.card-tree-sectoral-chart{
+    /* background: #f6f1f1; */
+    padding: 9px; /* Space inside the card */
+    background: #f8f8f8;
+    border: 1px solid #ddd; /* Light border around the card */
+    border-radius: 8px; /* Rounded corners */
+    
+    flex: 0.75;
+    /* Full width of the card container */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.tree-sectoral-chart{
+    height: 600px; /* Fixed height for the chart */
+    background-color: #f9f9f9; /* Light gray background to distinguish the chart area */
+    border-radius: 4px; /* Slightly rounded corners */
+
+}
+
+.card-bar-sectoral-chart h3, .card-tree-sectoral-chart h3{
+    margin: 5px 0;
+    font-size: 1.0vw; /* Make heading font size smaller */
+    text-align: left; /* Align heading to the left */
+    color: #6cb0f9;
+    transition: background-color 0.3s, border-color 0.3s;
+    font: inherit;
+}
+
+
+/*-------------------------------------------------------------Footer info ----------------------------------------------------*/
+/* Footer Styling */
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px; 
+    text-align: center;
+    border-top: 1px solid #e7e7e8;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    /* margin: 0; Ensure there's no margin */
+    position: relative; /* Ensure footer is positioned correctly */
+    flex-shrink: 0; /* Prevent shrinking in flex layout */
+    margin-left: 18px;
+    margin-right: 14px;
+    margin-top: -10px;
+}
+
+.footer-content {
+    /* max-width: 1200px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+    margin-right: 10px;
+    
+    justify-content: center;
+
+    flex-wrap: wrap;
+}
+
+.footer-content p {
+
+font-size: 16px;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-left input, .navbar-left button {
+        margin-bottom: 10px;
+        max-width: 100%;
+    }
+
+    .navbar-right {
+        margin-top: 10px;
+        gap: 10px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-content ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar-left input {
+        width: 100%;
+    }
+}
