@@ -118,5 +118,3 @@ This project is licensed under the terms of the **MIT License**.
 
 ---
 ✨ *Empowering Analytics with the Intelligence of Generative AI!*
-
-# ⭐ If you find this project helpful, please give it a star on GitHub to support further development!
