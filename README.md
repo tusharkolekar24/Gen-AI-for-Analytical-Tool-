@@ -4,6 +4,13 @@
 
 Gen-AI for Analytical Tool is an intelligent web-based application that integrates Generative AI capabilities to perform advanced data analytics, visualization, and automated insights generation. The system is built using modern web technologies with a focus on seamless interaction between frontend and backend for real-time analytical operations.
 
+When the user's Input was correct.
+![image](https://github.com/user-attachments/assets/d17b67ea-f12c-48b0-b411-8cdab61db7d1)
+
+When the user's Input was incorrect:
+![image](https://github.com/user-attachments/assets/cfde7ffe-96fc-4d5a-b59a-5052ef4f5a19)
+
+
 ---
 
 ## 📁 Project Structure
@@ -112,9 +119,4 @@ This project is licensed under the terms of the **MIT License**.
 ---
 ✨ *Empowering Analytics with the Intelligence of Generative AI!*
 
-## ⭐ If you find this project helpful, please give it a star on GitHub to support further development!
-When the user's Input was correct.
-![image](https://github.com/user-attachments/assets/d17b67ea-f12c-48b0-b411-8cdab61db7d1)
-
-When the user's Input was incorrect:
-![image](https://github.com/user-attachments/assets/cfde7ffe-96fc-4d5a-b59a-5052ef4f5a19)
+# ⭐ If you find this project helpful, please give it a star on GitHub to support further development!
